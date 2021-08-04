@@ -1,0 +1,145 @@
+:root {
+    --dark-cyan: #0E8784;
+    --dark-grey-blue: #333D4B;
+    --pale-orange: #FDD6BA;
+    --light-cream: #FEFCF7;
+    --grey: #83888F;
+  }
+
+
+body {
+    margin: 0px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: var(--light-cream);
+}
+
+/* Utilitie Classes */
+
+/* Containers */
+
+.container1 {
+    max-width: 1300px;
+}
+
+.container2 {
+    width: 90%;
+}
+
+/* Typography */
+
+#titleAlternateBig {
+    font-size: 150px;
+    line-height: 120px;
+    text-align: center;
+    opacity: 0.25;
+    background: linear-gradient(180deg, black 0%, #FEFCF7 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 2.1% 2%;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 72px;
+    color: var(--light-cream);
+    margin: 5% 0% 5% 0%;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+li {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+button {
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    font-family: 'Fraunces', serif;
+    border-radius: 5px;
+    background-color: var(--dark-cyan);
+    color: white;
+    border: none;
+}
+
+/* Nav */
+
+.navbar {
+    margin-top: 20px;
+}
+
+/* Header */
+
+header {
+    background-image: url('assets/home/desktop/image-hero-coffeepress.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 0.6em;
+    margin: 2% 0% 9% 0%;
+    padding: 100px;
+}
+
+
+#headerHeading {
+    width: 50%;
+}
+
+#headerHeading p {
+    width: 70%;
+    margin: 8% 0% 8% 0%;
+}
+
+/* Section 1 */
+
+#section1 {
+    position: relative;
+}
+
+.coffeeCard {
+    text-align: center;
+    width: 33%;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.coffeeCard > h4 {
+    margin-bottom: 1.5rem;
+}
+
+.coffeeImages {
+    width: 70%;
+    margin-bottom: 5rem;
+}
+
+#coffeeSection {
+    display: flex;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+}
