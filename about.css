@@ -1,0 +1,199 @@
+:root {
+    --dark-cyan: #0E8784;
+    --dark-grey-blue: #333D4B;
+    --pale-orange: #FDD6BA;
+    --light-cream: #FEFCF7;
+    --grey: #83888F;
+  }
+
+body {
+    margin: 0px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: var(--light-cream);
+}
+
+/* Utilitie Classes */
+
+/* Containers */
+
+.container1 {
+    max-width: 1300px;
+}
+
+.container2 {
+    width: 90%;
+}
+
+/* Typography */
+
+#titleAlternateBig {
+    font-size: 150px;
+    line-height: 120px;
+    text-align: center;
+    opacity: 0.25;
+    background: linear-gradient(180deg, black 0%, #FEFCF7 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 2.1% 2%;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 72px;
+    color: var(--light-cream);
+    margin: 5% 0% 5% 0%;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+li {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+button {
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    font-family: 'Fraunces', serif;
+    border-radius: 5px;
+    background-color: var(--dark-cyan);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #66D2CF;
+}
+
+/* Nav */
+
+.navbar {
+    margin: 2% 0% 2% 0%;
+}
+
+/* Header */
+
+#headerSection {
+    background-image: url('assets/about/desktop/image-hero-whitecup.jpg');
+    color: white;
+    border-radius: 0.6rem;
+    padding: 8rem 4rem;
+    margin-bottom: 10%;
+}
+
+#headerSection > p {
+    width: 40%;
+}
+
+/* Section 1 */
+
+#section1 {
+    padding: 0rem 4rem;
+    margin-bottom: 15rem;
+}
+
+#section1Image {
+    border-radius: 0.6rem;
+}
+
+.section1Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Section 2 */
+
+#section2 {
+    background-color: var(--dark-grey-blue);
+    color: white;
+    padding: 4rem 4rem 10rem 4rem;
+    border-radius: 0.6rem;
+    position: relative;
+}
+
+.section2Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section2ImageDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#section2Image {
+    border-radius: 0.6rem;
+    position: absolute;
+    bottom: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+#footer {
+    background-color: var(--dark-grey-blue);
+    color: white;
+    padding: 1rem 4rem;
+    margin-bottom: 5rem;
+}
+
+#footer > .navbar {
+    margin: 0px;
+}
+
+.nav-link {
+    color: var(--grey);
+    margin: 0rem 1rem;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.footerNav {
+    margin-left: 6rem;
+}
+
+.socialIcons {
+    margin-left: 1rem;
+}
+
+.socialIcons:hover {
+    fill: var(--pale-orange);
+}
