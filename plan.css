@@ -197,7 +197,8 @@ button:hover {
 /* Section 2 */
 
 #section2Container {
- position: relative;
+    display: flex;
+    position: relative;
 }
 
 .stepsLeftDiv > .container2 {
@@ -206,6 +207,10 @@ button:hover {
 
 #stepsLeftDiv{
     width: 25%;
+}
+
+#stepsLeft1 {
+    color: black;
 }
 
 .stepsLeftNum {
@@ -221,10 +226,9 @@ button:hover {
 }
 
 #questionsDiv {
-   position: absolute;
+   position: relative;
    width: 65%;
-   left: 40%;
-   top:-6%;
+   left: 15%;
 }
 
 .accordion-item, .accordion-header, .accordion-button, .accordion-button:not(.collapsed), button:hover  {
@@ -247,7 +251,34 @@ button:hover {
     width: 31%;
     border-radius: 0.6em;
     padding: 2rem 1.4rem 3.5rem 1.4rem;
+    cursor: pointer;
 }
+
+/* Javascript Class */
+
+.section2HeaderNotActive {
+    color: #333D4B; 
+}
+
+.section2HeaderActive {
+    color: white !important;  
+}
+
+.section2CardNotActive {
+    background-color: var(--light-cream);
+    color: #333D4B; 
+}
+
+.section2CardActive {
+    background-color: var(--dark-cyan);
+    color: white; 
+}
+
+.choices {
+    color: var(--dark-cyan);
+}
+
+/*                 */
 
 .section2Card > h4 {
     margin-bottom: 1.1rem;
@@ -256,8 +287,58 @@ button:hover {
 
 #orderSummaryDiv {
     position: absolute;
-    right: -3.5%;
-    bottom: -130%;
+    top: 110%;
+    right: 2.5%;
     background-color: #2C343E;
-    width: 62%;
+    width: 95%;
+    padding: 2rem 2rem 0rem 3rem;
+}
+
+#orderSummaryDiv > p {
+    color: var(--grey);
+}
+
+#orderSummaryDiv > h4 {
+    color: white;
+}
+
+#buttonDiv {
+    position: absolute;
+    top: 125%;
+    right: 0.1%;
+}
+
+/* Footer */
+
+#footer {
+    background-color: var(--dark-grey-blue);
+    color: white;
+    padding: 1rem 4rem;
+    margin-top: 30%;
+    margin-bottom: 5rem;
+}
+
+#footer > .navbar {
+    margin: 0px;
+}
+
+.nav-link {
+    color: var(--grey);
+    margin: 0rem 1rem;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.footerNav {
+    margin-left: 6rem;
+}
+
+.socialIcons {
+    margin-left: 1rem;
+}
+
+.socialIcons:hover {
+    fill: var(--pale-orange);
 }
