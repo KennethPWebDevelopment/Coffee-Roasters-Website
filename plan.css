@@ -97,10 +97,9 @@ button {
     border: none;
 }
 
-button:hover {
-    background-color: #66D2CF;
+#create-plan-btn:hover {
+    background-color: #66D2CF; 
 }
-
 /* Nav */
 
 .navbar {
@@ -287,7 +286,7 @@ button:hover {
 
 #orderSummaryDiv {
     position: absolute;
-    top: 110%;
+    margin-top: 10%;
     right: 2.5%;
     background-color: #2C343E;
     width: 95%;
@@ -306,6 +305,51 @@ button:hover {
     position: absolute;
     top: 125%;
     right: 0.1%;
+}
+
+/* Order Summary Overlay */
+
+#order-summary-overlay {
+    width: 30%;
+    border-radius: 0.6rem;
+    border: 0.1px solid black;
+    -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.34); 
+    box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.34);
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    background-color: var(--light-cream);
+}
+
+#order-summary-overlay> h2 {
+    background-color: var(--dark-grey-blue);
+    color: white;
+    padding: 9%;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+}
+
+#order-summary-overlay> h4 {
+    padding: 6% 9% 0% 9%;
+    margin-bottom: 1.5%;
+    margin-bottom: 3%;
+}
+
+#order-summary-overlay> p {
+    padding: 0% 9%;
+    margin-bottom: 10%;
+}
+
+#order-summary-overlay> h3 {
+    color: black;
+    padding: 0% 9%;
+    display: inline;
+}
+
+#order-summary-overlay> button {
+    color: white;
+    padding: 2% 10%;
+    margin-bottom: 10%;
 }
 
 /* Footer */
@@ -342,3 +386,5 @@ button:hover {
 .socialIcons:hover {
     fill: var(--pale-orange);
 }
+
+/* Overlay */

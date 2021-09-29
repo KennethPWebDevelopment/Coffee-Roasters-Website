@@ -110,13 +110,17 @@ const card13Header = document.querySelector("#card13header");
 const card14Header = document.querySelector("#card14header");
 const card15Header = document.querySelector("#card15header");
 
+// Total Amount Variable
+
+let totalAmount = document.querySelector("#total-amount"); 
+
 // Coffee Choices
 
-let choiceOne = document.querySelector("#choice-one"); 
-let choiceTwo = document.querySelector("#choice-two"); 
-let choiceThree = document.querySelector("#choice-three"); 
-let choiceFour = document.querySelector("#choice-four"); 
-let choiceFive = document.querySelector("#choice-five"); 
+let choiceOne = document.querySelectorAll(".choice-one"); 
+let choiceTwo = document.querySelectorAll(".choice-two"); 
+let choiceThree = document.querySelectorAll(".choice-three"); 
+let choiceFour = document.querySelectorAll(".choice-four"); 
+let choiceFive = document.querySelectorAll(".choice-five"); 
 
 // Card1 Active
 
@@ -128,7 +132,8 @@ card1.addEventListener("click", function() {
    card3.classList.remove("section2CardActive");
    card3Header.classList.remove("section2HeaderActive");
 
-   choiceOne.innerHTML = "Capsule"; 
+   choiceOne[0].innerHTML = "Capsule"; 
+   choiceOne[1].innerHTML = "Capsule"; 
 })
 
 // Card2 Active
@@ -140,7 +145,9 @@ card2.addEventListener("click", function() {
    card2Header.classList.add("section2HeaderActive");
    card3.classList.remove("section2CardActive");
    card3Header.classList.remove("section2HeaderActive");
-   choiceOne.innerHTML = "Filter";
+
+   choiceOne[0].innerHTML = "Filter";
+   choiceOne[1].innerHTML = "Filter";
 })
 
 // Card3 Active
@@ -152,7 +159,9 @@ card3.addEventListener("click", function() {
    card2Header.classList.remove("section2HeaderActive");
    card3.classList.add("section2CardActive");
    card3Header.classList.add("section2HeaderActive");
-   choiceOne.innerHTML = "Expresso";
+
+   choiceOne[0].innerHTML = "Expresso";
+   choiceOne[1].innerHTML = "Expresso";
 })
 
 // Card4 Active
@@ -165,7 +174,8 @@ card4.addEventListener("click", function() {
    card6.classList.remove("section2CardActive");
    card6Header.classList.remove("section2HeaderActive");
 
-   choiceTwo.innerHTML = "Single origin";
+   choiceTwo[0].innerHTML = "Single origin";
+   choiceTwo[1].innerHTML = "Single origin";
 })
 
 // Card5 Active
@@ -178,7 +188,8 @@ card5.addEventListener("click", function() {
    card6.classList.remove("section2CardActive");
    card6Header.classList.remove("section2HeaderActive");
 
-   choiceTwo.innerHTML = "Decaf";
+   choiceTwo[0].innerHTML = "Decaf";
+   choiceTwo[1].innerHTML = "Decaf";
 })
 
 // Card6 Active
@@ -191,7 +202,8 @@ card6.addEventListener("click", function() {
    card6.classList.add("section2CardActive");
    card6Header.classList.add("section2HeaderActive");
 
-   choiceTwo.innerHTML = "Blended";
+   choiceTwo[0].innerHTML = "Blended";
+   choiceTwo[1].innerHTML = "Blended";
 })
 
 // Card7 Active
@@ -204,7 +216,8 @@ card7.addEventListener("click", function() {
    card9.classList.remove("section2CardActive");
    card9Header.classList.remove("section2HeaderActive");
 
-   choiceThree.innerHTML = "250g";
+   choiceThree[0].innerHTML = "250g";
+   choiceThree[1].innerHTML = "250g";
 })
 
 // Card8 Active
@@ -217,7 +230,8 @@ card8.addEventListener("click", function() {
    card9.classList.remove("section2CardActive");
    card9Header.classList.remove("section2HeaderActive");
 
-   choiceThree.innerHTML = "500g";
+   choiceThree[0].innerHTML = "500g";
+   choiceThree[1].innerHTML = "500g";
 })
 
 // Card9 Active
@@ -230,7 +244,8 @@ card9.addEventListener("click", function() {
    card9.classList.add("section2CardActive");
    card9Header.classList.add("section2HeaderActive");
 
-   choiceThree.innerHTML = "1000g";
+   choiceThree[0].innerHTML = "1000g";
+   choiceThree[1].innerHTML = "1000g";
 })
 
 // Card10 Active
@@ -243,7 +258,8 @@ card10.addEventListener("click", function() {
    card12Header.classList.remove("section2CardActive");
    card12Header.classList.remove("section2HeaderActive");
 
-   choiceFour.innerHTML = "Wholebean";
+   choiceFour[0].innerHTML = "Wholebean";
+   choiceFour[1].innerHTML = "Wholebean";
 })
 
 // Card11 Active
@@ -256,7 +272,8 @@ card11.addEventListener("click", function() {
    card12.classList.remove("section2CardActive");
    card12Header.classList.remove("section2HeaderActive");
 
-   choiceFour.innerHTML = "Filter";
+   choiceFour[0].innerHTML = "Filter";
+   choiceFour[1].innerHTML = "Filter";
 })
 
 // Card12 Active
@@ -269,7 +286,8 @@ card12.addEventListener("click", function() {
    card12.classList.add("section2CardActive");
    card12Header.classList.add("section2HeaderActive");
 
-   choiceFour.innerHTML = "Cafetiére";
+   choiceFour[0].innerHTML = "Cafetiére";
+   choiceFour[1].innerHTML = "Cafetiére";
 })
 
 // Card13 Active
@@ -282,7 +300,9 @@ card13.addEventListener("click", function() {
    card15Header.classList.remove("section2CardActive");
    card15Header.classList.remove("section2HeaderActive");
 
-   choiceFive.innerHTML = "Every week";
+   choiceFive[0].innerHTML = "Every week";
+   choiceFive[1].innerHTML = "Every week";
+   totalAmount.innerHTML = "14.00 /mo"
 })
 
 // Card14 Active
@@ -295,7 +315,9 @@ card14.addEventListener("click", function() {
    card15.classList.remove("section2CardActive");
    card15Header.classList.remove("section2HeaderActive");
 
-   choiceFive.innerHTML = "Every 2 weeks";
+   choiceFive[0].innerHTML = "Every 2 weeks";
+   choiceFive[1].innerHTML = "Every 2 weeks";
+   totalAmount.innerHTML = "17.25 /mo"
 })
 
 // Card15 Active
@@ -308,5 +330,18 @@ card15.addEventListener("click", function() {
    card15.classList.add("section2CardActive");
    card15Header.classList.add("section2HeaderActive");
 
-   choiceFive.innerHTML = "Every month";
+   choiceFive[0].innerHTML = "Every month";
+   choiceFive[1].innerHTML = "Every month";
+   totalAmount.innerHTML = "22.50 /mo"
 })
+
+// Create your plan button
+
+const createPlanBtn = document.querySelector("#create-plan-btn"); 
+const orderSummaryOverlay = document.querySelector("#order-summary-overlay"); 
+
+createPlanBtn.addEventListener("click", function() {
+   orderSummaryOverlay.style.display = "block";
+})
+
+
