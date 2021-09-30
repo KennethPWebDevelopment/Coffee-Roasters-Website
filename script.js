@@ -122,6 +122,24 @@ let choiceThree = document.querySelectorAll(".choice-three");
 let choiceFour = document.querySelectorAll(".choice-four"); 
 let choiceFive = document.querySelectorAll(".choice-five"); 
 
+// Accordian Buttons
+
+let accordianBtn2 = document.querySelector("#accordian-btn-2"); 
+let panel2 = document.querySelector("#panelsStayOpen-collapseTwo");
+
+let accordianBtn3 = document.querySelector("#accordian-btn-3"); 
+let panel3 = document.querySelector("#panelsStayOpen-collapseThree");
+
+let accordianBtn4 = document.querySelector("#accordian-btn-4"); 
+let panel4 = document.querySelector("#panelsStayOpen-collapseFour");
+
+let accordianBtn5 = document.querySelector("#accordian-btn-5"); 
+let panel5 = document.querySelector("#panelsStayOpen-collapseFive");
+
+// Overlay
+let overlay = document.querySelector("#overlay"); 
+
+
 // Card1 Active
 
 card1.addEventListener("click", function() {
@@ -134,6 +152,12 @@ card1.addEventListener("click", function() {
 
    choiceOne[0].innerHTML = "Capsule"; 
    choiceOne[1].innerHTML = "Capsule"; 
+
+
+   accordianBtn2.classList.remove("collapsed");
+   accordianBtn2.setAttribute("ariaExpanded", "true");
+   panel2.classList.add("show");
+
 })
 
 // Card2 Active
@@ -148,6 +172,10 @@ card2.addEventListener("click", function() {
 
    choiceOne[0].innerHTML = "Filter";
    choiceOne[1].innerHTML = "Filter";
+
+   accordianBtn2.classList.remove("collapsed");
+   accordianBtn2.setAttribute("ariaExpanded", "true");
+   panel2.classList.add("show");
 })
 
 // Card3 Active
@@ -162,6 +190,10 @@ card3.addEventListener("click", function() {
 
    choiceOne[0].innerHTML = "Expresso";
    choiceOne[1].innerHTML = "Expresso";
+
+   accordianBtn2.classList.remove("collapsed");
+   accordianBtn2.setAttribute("ariaExpanded", "true");
+   panel2.classList.add("show");
 })
 
 // Card4 Active
@@ -176,6 +208,10 @@ card4.addEventListener("click", function() {
 
    choiceTwo[0].innerHTML = "Single origin";
    choiceTwo[1].innerHTML = "Single origin";
+
+   accordianBtn3.classList.remove("collapsed");
+   accordianBtn3.setAttribute("ariaExpanded", "true");
+   panel3.classList.add("show");
 })
 
 // Card5 Active
@@ -190,6 +226,10 @@ card5.addEventListener("click", function() {
 
    choiceTwo[0].innerHTML = "Decaf";
    choiceTwo[1].innerHTML = "Decaf";
+
+   accordianBtn3.classList.remove("collapsed");
+   accordianBtn3.setAttribute("ariaExpanded", "true");
+   panel3.classList.add("show");
 })
 
 // Card6 Active
@@ -204,6 +244,10 @@ card6.addEventListener("click", function() {
 
    choiceTwo[0].innerHTML = "Blended";
    choiceTwo[1].innerHTML = "Blended";
+
+   accordianBtn3.classList.remove("collapsed");
+   accordianBtn3.setAttribute("ariaExpanded", "true");
+   panel3.classList.add("show");
 })
 
 // Card7 Active
@@ -218,6 +262,10 @@ card7.addEventListener("click", function() {
 
    choiceThree[0].innerHTML = "250g";
    choiceThree[1].innerHTML = "250g";
+
+   accordianBtn4.classList.remove("collapsed");
+   accordianBtn4.setAttribute("ariaExpanded", "true");
+   panel4.classList.add("show");
 })
 
 // Card8 Active
@@ -232,6 +280,10 @@ card8.addEventListener("click", function() {
 
    choiceThree[0].innerHTML = "500g";
    choiceThree[1].innerHTML = "500g";
+
+   accordianBtn4.classList.remove("collapsed");
+   accordianBtn4.setAttribute("ariaExpanded", "true");
+   panel4.classList.add("show");
 })
 
 // Card9 Active
@@ -246,6 +298,10 @@ card9.addEventListener("click", function() {
 
    choiceThree[0].innerHTML = "1000g";
    choiceThree[1].innerHTML = "1000g";
+
+   accordianBtn4.classList.remove("collapsed");
+   accordianBtn4.setAttribute("ariaExpanded", "true");
+   panel4.classList.add("show");
 })
 
 // Card10 Active
@@ -260,6 +316,10 @@ card10.addEventListener("click", function() {
 
    choiceFour[0].innerHTML = "Wholebean";
    choiceFour[1].innerHTML = "Wholebean";
+
+   accordianBtn5.classList.remove("collapsed");
+   accordianBtn5.setAttribute("ariaExpanded", "true");
+   panel5.classList.add("show");
 })
 
 // Card11 Active
@@ -274,6 +334,10 @@ card11.addEventListener("click", function() {
 
    choiceFour[0].innerHTML = "Filter";
    choiceFour[1].innerHTML = "Filter";
+
+   accordianBtn5.classList.remove("collapsed");
+   accordianBtn5.setAttribute("ariaExpanded", "true");
+   panel5.classList.add("show");
 })
 
 // Card12 Active
@@ -288,6 +352,10 @@ card12.addEventListener("click", function() {
 
    choiceFour[0].innerHTML = "Cafetiére";
    choiceFour[1].innerHTML = "Cafetiére";
+
+   accordianBtn5.classList.remove("collapsed");
+   accordianBtn5.setAttribute("ariaExpanded", "true");
+   panel5.classList.add("show");
 })
 
 // Card13 Active
@@ -303,6 +371,7 @@ card13.addEventListener("click", function() {
    choiceFive[0].innerHTML = "Every week";
    choiceFive[1].innerHTML = "Every week";
    totalAmount.innerHTML = "14.00 /mo"
+
 })
 
 // Card14 Active
@@ -342,6 +411,7 @@ const orderSummaryOverlay = document.querySelector("#order-summary-overlay");
 
 createPlanBtn.addEventListener("click", function() {
    orderSummaryOverlay.style.display = "block";
+   overlay.style.display = "block";
 })
 
 

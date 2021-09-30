@@ -100,6 +100,10 @@ button {
 #create-plan-btn:hover {
     background-color: #66D2CF; 
 }
+
+#check-out:hover {
+    background-color: #66D2CF; 
+}
 /* Nav */
 
 .navbar {
@@ -239,6 +243,10 @@ button {
     box-shadow: var(--light-cream)
 }
 
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
 #section2CardSection {
     display: flex;
     justify-content: space-between;
@@ -320,6 +328,7 @@ button {
     top: 20%;
     left: 35%;
     background-color: var(--light-cream);
+    z-index: 1;
 }
 
 #order-summary-overlay> h2 {
@@ -388,3 +397,14 @@ button {
 }
 
 /* Overlay */
+
+#overlay {
+    height: 306%;
+    width: 100%; 
+    opacity: 0.1;
+    position: absolute;
+    right: 0%;
+    background-color: black;
+    z-index: 1;
+    display: none;
+}
