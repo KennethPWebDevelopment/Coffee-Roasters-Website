@@ -8,7 +8,7 @@
 
 body {
     margin: 0px;
-    padding: 0 60px;
+    padding: 0 40px;
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
@@ -22,7 +22,7 @@ body {
 /* Containers */
 
 .container1 {
-    max-width: 1300px;
+    max-width: 1440px;
 }
 
 .container2 {
@@ -70,7 +70,7 @@ h4 {
     font-size: 24px;
     line-height: 32px;
     color: var(--grey);
-    margin-bottom: 3.5rem;
+    margin-bottom: 5rem;
 }
 
 li {
@@ -124,6 +124,10 @@ button:hover {
     margin-bottom: 15rem;
 }
 
+#section1 > .container-fluid > .row>* {
+    padding-left: 0px;
+}
+
 #section1Image {
     border-radius: 0.6rem;
 }
@@ -139,7 +143,7 @@ button:hover {
 #section2 {
     background-color: var(--dark-grey-blue);
     color: white;
-    padding: 4rem 4rem 11.7rem 4rem;
+    padding: 6rem 4rem 11.7rem 4rem;
     margin-bottom: 8.7rem;
     border-radius: 0.6rem;
     position: relative;
@@ -166,19 +170,8 @@ button:hover {
 
 #section3 {
     margin-bottom: 8rem;
+    padding: 0rem 4rem;
 }
-
-#hqSection {
-  display: flex;
-  justify-content: space-around;
-}
-
-
-
-
-
-
-
 
 /* Footer */
 
