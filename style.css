@@ -22,11 +22,7 @@ body {
 /* Containers */
 
 .container1 {
-    max-width: 1300px;
-}
-
-.container2 {
-    width: 90%;
+    max-width: 1440px;
 }
 
 /* Typography */
@@ -35,11 +31,11 @@ body {
     font-size: 150px;
     line-height: 120px;
     text-align: center;
+    margin: 8rem auto 0rem auto;
     opacity: 0.25;
     background: linear-gradient(180deg, black 0%, #FEFCF7 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    padding: 2.1% 2%;
 }
 
 h1,h2,h3,h4 {
@@ -98,25 +94,24 @@ button:hover {
 
 /* Header */
 
-header {
+#header {
     background-image: url('assets/home/desktop/image-hero-coffeepress.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     border-radius: 0.6em;
-    margin: 2% 0% 9% 0%;
-    padding: 100px;
+    padding: 6rem 4rem;
 }
 
 
 #headerHeading {
-    width: 50%;
+    width: 60%;
 }
 
 #headerHeading p {
-    width: 70%;
-    margin: 8% 0% 8% 0%;
+    margin: 2rem 0rem 3rem 0rem;
+    width: 80%;
 }
 
 /* Section 1 */
@@ -127,7 +122,6 @@ header {
 
 .coffeeCard {
     text-align: center;
-    width: 33%;
     padding: 0rem 1rem 0rem 1rem;
 }
 
@@ -141,10 +135,9 @@ header {
 }
 
 #coffeeSection {
-    display: flex;
+    padding: 0rem 4rem;
     position: absolute;
-    top: 65%;
-    left: 5%;
+    bottom: -19rem;
 }
 
 /* Section 2  */
@@ -153,9 +146,9 @@ header {
     background-color: var(--dark-grey-blue);
     color: white;
     margin-top: 30rem;
-    margin-bottom: 22rem;
+    margin-bottom: 18rem;
     border-radius: 0.6em;
-    padding: 6rem 0rem 20rem 0rem;
+    padding: 6rem 4rem 0rem 4rem;
     position: relative;
 }
 
@@ -170,20 +163,20 @@ header {
 }
 
 #section2CardSection {
+    position: relative;
+    top: 5rem;   
+}
+
+.section2-card-col {
+    align-items: stretch;
     display: flex;
-    justify-content: space-between;
-    padding: 0px;
-    position: absolute;
-    bottom:  -25%;
-    left: 5%;
 }
 
 .section2Card {
     background-color: var(--dark-cyan);
-    width: 30%;
     border-radius: 0.6em;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem; 
 }
 
 .section2Icons {
@@ -200,9 +193,10 @@ header {
 #section3 {
     position: relative;
     margin-bottom: 12%;
+    padding: 0rem 4rem 0rem 4rem;
 }
 
-#section3 > h4 {
+#section3 > div > h4 {
     color: var(--grey)
 }
 
@@ -214,7 +208,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 72%;
+    width: 69.5%;
     margin: 5rem 0rem;
 }
 
@@ -236,8 +230,12 @@ header {
     justify-content: space-between;
 }
 
+#section3CardSection > .container-fluid > .row>* {
+    padding-left: 0px;
+    padding-right: 3rem;
+}
+
 .section3Card {
-    width: 30%;
     border-radius: 0.6rem;
     padding: 0rem 0rem 2rem 0rem;
 }
