@@ -311,7 +311,7 @@ card10.addEventListener("click", function() {
    card10Header.classList.add("section2HeaderActive");
    card11.classList.remove("section2CardActive");
    card11Header.classList.remove("section2HeaderActive");
-   card12Header.classList.remove("section2CardActive");
+   card12.classList.remove("section2CardActive");
    card12Header.classList.remove("section2HeaderActive");
 
    choiceFour[0].innerHTML = "Wholebean";
@@ -358,6 +358,7 @@ card12.addEventListener("click", function() {
    panel5.classList.add("show");
 })
 
+
 // Card13 Active
 
 card13.addEventListener("click", function() {
@@ -365,7 +366,7 @@ card13.addEventListener("click", function() {
    card13Header.classList.add("section2HeaderActive");
    card14.classList.remove("section2CardActive");
    card14Header.classList.remove("section2HeaderActive");
-   card15Header.classList.remove("section2CardActive");
+   card15.classList.remove("section2CardActive");
    card15Header.classList.remove("section2HeaderActive");
 
    choiceFive[0].innerHTML = "Every week";

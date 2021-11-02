@@ -22,11 +22,7 @@ body {
 /* Containers */
 
 .container1 {
-    max-width: 1300px;
-}
-
-.container2 {
-    width: 90%;
+    max-width: 1440px;
 }
 
 ul {
@@ -34,17 +30,6 @@ ul {
 }
 
 /* Typography */
-
-#titleAlternateBig {
-    font-size: 150px;
-    line-height: 120px;
-    text-align: center;
-    opacity: 0.25;
-    background: linear-gradient(180deg, black 0%, #FEFCF7 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    padding: 2.1% 2%;
-}
 
 h1,h2,h3,h4 {
     font-family: 'Fraunces', serif;
@@ -55,7 +40,7 @@ h1 {
     font-size: 72px;
     line-height: 72px;
     color: var(--light-cream);
-    margin: 5% 0% 5% 0%;
+    margin: 3rem 0rem 2rem;
 }
 
 h2 {
@@ -119,7 +104,7 @@ button {
     background-size: cover;
     color: white;
     border-radius: 0.6rem;
-    padding: 8rem 4rem;
+    padding: 5rem 4rem;
     margin-bottom: 8%;
 }
 
@@ -133,13 +118,12 @@ button {
 
 #section3 {
     position: relative;
-    margin-bottom: 8%;
+    margin-bottom: 10rem;
     background-color: var(--dark-grey-blue);
-    border-radius: 0.6rem;
-    padding: 0.5rem 0rem 3rem 0rem;
+    padding: 2rem 4rem 4rem 4rem;
 }
 
-#section3 > h4 {
+#section3 > div > h4 {
     color: var(--grey)
 }
 
@@ -147,16 +131,15 @@ button {
     color: var(--pale-orange)
 }
 
-.section1p {
+.p-white {
     color: white;
-    vertical-align: baseline;
 }
 
 #section3abstract {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 72%;
+    width: 69.5%;
     margin: 5rem 0rem;
 }
 
@@ -178,8 +161,12 @@ button {
     justify-content: space-between;
 }
 
+#section3CardSection > .container-fluid > .row>* {
+    padding-left: 0px;
+    padding-right: 3rem;
+}
+
 .section3Card {
-    width: 30%;
     border-radius: 0.6rem;
     padding: 0rem 0rem 2rem 0rem;
 }
@@ -198,6 +185,10 @@ button {
 }
 
 /* Section 2 */
+
+#section2 {
+    padding: 0rem 4rem;
+}
 
 #section2Container {
     display: flex;
