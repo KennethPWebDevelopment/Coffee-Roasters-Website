@@ -92,6 +92,16 @@ button:hover {
     margin: 2% 0% 2% 0%;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0rem 0rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+
+}
+
 /* Header */
 
 #header {
@@ -275,10 +285,6 @@ button:hover {
     color: white;
 }
 
-.footerNav {
-    margin-left: 6rem;
-}
-
 .socialIcons {
     margin-left: 1rem;
 }
@@ -286,3 +292,134 @@ button:hover {
 .socialIcons:hover {
     fill: var(--pale-orange);
 }
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 991px) {
+    /* Typography */
+    h1 {
+        font-size: 66px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    #titleAlternateBig {
+        font-size: 124px;
+        line-height: 120px;
+        text-align: center;
+        margin: 10rem auto 0rem auto;
+        opacity: 0.25;
+        background: linear-gradient(180deg, black 0%, #FEFCF7 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    /* Section 1 */
+    
+    #coffeeSection {
+        padding: 0rem 4rem;
+        position: absolute;
+        top: 4.6rem;
+    }
+
+    .coffeeCard {
+        display: flex;
+        text-align: left;
+    }
+
+    .coffeeImages {
+        width: 44%;
+        margin-bottom: 3.5rem;
+    }
+
+    .coffee-card-content > div > h4 {
+       margin: 1.2rem 0rem 0rem 1rem;
+    }
+
+    .coffee-card-content > div > p {
+        margin: 1rem 0rem 0rem 1rem;
+     }
+
+     /* Section 2 */
+
+     #section2 {
+        background-color: var(--dark-grey-blue);
+        color: white;
+        margin-top: 83rem;
+        margin-bottom: 18rem;
+        border-radius: 0.6em;
+        padding: 6rem 4rem 30rem 4rem;
+        position: relative;
+    }
+
+    #section2CardSection {
+        position: absolute;
+        top: 22rem;
+        left:0;
+        right:0;
+        width: 86%;
+        margin-left:auto;
+        margin-right:auto;
+        }
+
+    #section2Header {
+        width: 68%;
+    }
+
+    .section2-card-col {
+        display: inline;
+    }
+
+    .section2Card {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .coffee-card-content {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .section2Icons {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .icon-container {
+        width: 14%;
+        padding: 2rem 0rem;
+    }
+
+    /* Section 3 */
+
+    #section3 {
+        margin-top: 30rem;
+        padding: 0px;
+    }
+
+    #section3abstract {
+        margin: 3rem 0rem;
+    }
+
+    /* Footer */
+
+    #footer  {
+        text-align: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0rem;
+    }
+
+    svg {
+        margin: 0rem 2rem;
+    }
+
+  }
