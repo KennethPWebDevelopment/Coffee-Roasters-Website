@@ -121,6 +121,7 @@ button {
     margin-bottom: 10rem;
     background-color: var(--dark-grey-blue);
     padding: 2rem 4rem 4rem 4rem;
+    color: white;
 }
 
 #section3 > div > h4 {
@@ -129,10 +130,6 @@ button {
 
 #section3 > h1 {
     color: var(--pale-orange)
-}
-
-.p-white {
-    color: white;
 }
 
 #section3abstract {
@@ -399,3 +396,78 @@ button {
     z-index: 1;
     display: none;
 }
+
+/* Media Queries  */
+
+@media only screen and (max-width: 991px) {
+    /* Typography */
+    /* h1 {
+        font-size: 66px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    /* Header */
+
+    #headerSection {
+        background-image: url("assets/plan/tablet/image-hero-blackcup.jpg");
+    }
+
+    #headerSection > p {
+        width: 70%;
+    }
+
+    /* Section 1 */
+
+    #section3 {
+        border-radius: 0.5rem;
+        color: white;
+        margin-bottom: 8rem;
+    }
+
+    #section3abstract {
+        margin: 3rem 0rem;
+    }
+
+     /* Section 2 */
+
+     #section2 {
+         padding-bottom: 20rem;
+     }
+
+     #stepsLeftDiv {
+         display: none;
+     }
+
+     #questionsDiv {
+         width: 100%;
+         left: 0%;
+     }
+
+     #orderSummaryDiv {
+         border-radius: 0.5rem;
+     }
+
+     #buttonDiv {
+         right: 35%;
+     }
+
+    /* Footer */
+
+    #footer  {
+        text-align: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0rem;
+    }
+
+    svg {
+        margin: 0rem 2rem;
+    }
+
+  }

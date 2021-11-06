@@ -25,10 +25,6 @@ body {
     max-width: 1440px;
 }
 
-.container2 {
-    width: 90%;
-}
-
 /* Typography */
 
 #titleAlternateBig {
@@ -206,3 +202,86 @@ button:hover {
 .socialIcons:hover {
     fill: var(--pale-orange);
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 991px) {
+    /* Typography */
+
+    h1 {
+        font-size: 66px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    #titleAlternateBig {
+        font-size: 124px;
+        line-height: 120px;
+        text-align: center;
+        margin: 10rem auto 0rem auto;
+        opacity: 0.25;
+        background: linear-gradient(180deg, black 0%, #FEFCF7 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    /* Header */
+
+    #headerSection {
+        background-image: url("assets/about/tablet/image-hero-whitecup.jpg");
+    }
+
+    #headerSection > p {
+        width: 70%;
+    }
+    
+
+    /* Section 1 */
+    
+    #section1Image {
+        content:url("assets/about/tablet/image-commitment.jpg");
+    }
+
+    #section1 {
+        padding: 0rem 0rem;
+    }
+
+     /* Section 2 */
+
+     #section2 {
+         text-align: center;
+         padding: 6rem 4rem; 
+     }
+
+     .section2ImageDiv {
+        justify-content: center;
+     }
+
+     #section2Image {
+         content:url("assets/about/tablet/image-quality.jpg");
+         position: absolute;
+     }
+
+     .section2Header {
+         margin-top: 13rem;
+     }
+
+    /* Footer */
+
+    #footer  {
+        text-align: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0rem;
+    }
+
+    svg {
+        margin: 0rem 2rem;
+    }
+
+  }

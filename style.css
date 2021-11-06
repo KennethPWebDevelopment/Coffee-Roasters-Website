@@ -317,7 +317,21 @@ button:hover {
         -webkit-background-clip: text;
     }
 
+    /* Header */
+
+    #header {
+        background-image: url("assets/home/tablet/image-hero-coffeepress.jpg");
+    }
+
+    #headerHeading {
+        width: 80%;
+    }
+
     /* Section 1 */
+
+    #section1 {
+        margin-bottom: 140%;
+    }
     
     #coffeeSection {
         padding: 0rem 4rem;
@@ -348,11 +362,15 @@ button:hover {
      #section2 {
         background-color: var(--dark-grey-blue);
         color: white;
-        margin-top: 83rem;
         margin-bottom: 18rem;
         border-radius: 0.6em;
         padding: 6rem 4rem 30rem 4rem;
         position: relative;
+    }
+
+    #section2 > #section2CardSection > .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
     #section2CardSection {
