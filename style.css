@@ -28,7 +28,7 @@ body {
 /* Typography */
 
 #titleAlternateBig {
-    font-size: 150px;
+    font-size: 10vw;
     line-height: 120px;
     text-align: center;
     margin: 8rem auto 0rem auto;
@@ -145,7 +145,6 @@ button:hover {
 }
 
 #coffeeSection {
-    padding: 0rem 4rem;
     position: absolute;
     bottom: -19.5rem;
 }
@@ -306,17 +305,6 @@ button:hover {
         font-size: 28px;
     }
 
-    #titleAlternateBig {
-        font-size: 124px;
-        line-height: 120px;
-        text-align: center;
-        margin: 10rem auto 0rem auto;
-        opacity: 0.25;
-        background: linear-gradient(180deg, black 0%, #FEFCF7 100%);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-
     /* Header */
 
     #header {
@@ -398,11 +386,6 @@ button:hover {
         margin-bottom: 2rem;
     }
 
-    .coffee-card-content {
-        text-align: left;
-        margin-left: 1rem;
-    }
-
     .section2Icons {
         margin-bottom: 0px;
         width: 100%;
@@ -436,8 +419,175 @@ button:hover {
         margin: 1rem 0rem;
     }
 
+    #footer-container {
+        width: 95%;
+    }
+
     svg {
         margin: 0rem 2rem;
+    }
+
+  }
+
+
+
+
+  @media only screen and (max-width: 767px) {
+
+    body {
+        padding: 20px;
+    }
+    /* Typography */
+    
+    h1 {
+        font-size: 66px;
+    }
+
+    h2 {
+        font-size: 39.2px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    /* container */
+
+    #section1 > .container, .container-fluid, 
+    .container-lg, .container-md, .container-sm, 
+    .container-xl, .container-xxl {
+        padding: 0px;
+    }
+
+    /* Nav */
+
+    .navbar {
+        margin: 0rem 0rem 2rem 0rem;
+    }
+
+    /* Header */
+
+    #header {
+        background-image: url("assets/home/mobile/image-hero-coffeepress.jpg");
+        padding: 6rem 0rem;
+    }
+
+    #headerHeading {
+        text-align: center;
+        width: 100%;
+    }
+
+    #headerHeading > h1 {
+        font-size: 3rem;
+    }
+
+    #headerHeading > p {
+        width: 100%;
+        padding: 0rem 2rem;
+        margin: 2.8rem 0rem;
+    }
+
+    /* Section 1 */
+
+    #titleAlternateBig {
+        margin-top: 4rem;
+        opacity: 0.50;
+    }
+
+    #section1 {
+        margin-bottom: 110rem;
+        position: relative;
+    }
+    
+    #coffeeSection {
+        padding: 0rem 0rem;
+        position: absolute;
+        top: 4.6rem;
+    }
+
+    .coffeeCard {
+        display: block;
+        text-align: center;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    .coffeeImages {
+        width: 70%;
+        margin: 3rem 0rem 3rem 0rem;
+    }
+
+    .coffee-card-content {
+      padding: 0rem 3rem;
+    }
+ 
+    .coffee-card-content > div > h4 {
+        margin: 0;
+    }
+
+    .coffee-card-content > div > p {
+        margin: 1rem 0rem;
+    }
+
+     /* Section 2 */
+ 
+     #section2 {
+        background-color: var(--dark-grey-blue);
+        padding: 6rem 2rem 40rem 2rem;
+    }
+
+    #section2Header {
+        width: 100%;
+    }
+
+    #section2CardSection {
+        margin-top: 3rem;
+    }
+
+    .section2Card {
+        padding: 3rem 0rem;
+        display: block;
+        
+    }
+
+    .icon-container {
+       width: 100%;
+    }
+
+    .section2Icons {
+        width: 20%;
+    }
+
+    /* Section 3 */
+
+      #section3 {
+        margin-top: 46rem;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #section3 > div > h4 {
+        margin-bottom: 4rem;
+    }
+
+    #section3CardSection > .container-fluid > .row>* {
+        padding: 0rem 1.6rem;
+    }
+
+    #section3abstract {
+        display: none;
+    } 
+
+    #section3 > .container-fluid > a > button {
+        margin-top: 3rem;
+    }
+
+   
+
+    /* Footer */
+
+    #footer-logo {
+        margin: 0px;
     }
 
   }
