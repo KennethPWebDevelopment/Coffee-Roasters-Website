@@ -243,7 +243,6 @@ button {
 
 .section2Card {
     background-color: #F4F1EB;
-    width: 31%;
     border-radius: 0.6em;
     padding: 2rem 1.4rem 3.5rem 1.4rem;
     cursor: pointer;
@@ -400,14 +399,6 @@ button {
 /* Media Queries  */
 
 @media only screen and (max-width: 991px) {
-    /* Typography */
-    /* h1 {
-        font-size: 66px;
-    }
-
-    h4 {
-        font-size: 28px;
-    }
 
     /* Header */
 
@@ -468,6 +459,124 @@ button {
 
     svg {
         margin: 0rem 2rem;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 767px) {
+
+    body {
+        padding: 0px;
+    }
+
+    /* Typography */
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 5vh;
+        margin: 3rem 0rem;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    /* container */
+
+    #section1 > .container, .container-fluid, 
+    .container-lg, .container-md, .container-sm, 
+    .container-xl, .container-xxl {
+        padding: 0px;
+    }
+
+    /* Nav */
+
+    .navbar {
+        margin: 0rem 0rem 2rem 0rem;
+    }
+
+    /* Header */
+
+    #headerSection {
+        background-image: url("assets/plan/mobile/image-hero-blackcup.jpg");
+        padding: 6rem 0rem;
+        text-align: center;
+        margin-bottom: 8rem;
+        width: 95%;
+    }
+
+    #headerHeading > h1 {
+        font-size: 3rem;
+    }
+
+    #headerSection > p {
+        width: 100%;
+        padding: 0rem 2rem;
+        margin: 2.8rem 0rem;
+    }
+
+    /* Section 1 */
+
+    #section3 {
+        text-align: center;
+        padding: 2rem 0rem 4rem 0rem;
+        margin-bottom: 1rem;
+    }
+
+    #section3abstract {
+        display: none;
+    }
+
+    #section3CardSection > .container-fluid > .row>* {
+        padding: 0rem 2rem;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .section3Card {
+        padding: 0rem 0rem;
+    }
+
+    .section3Card > h1 {
+        font-size: 4.5rem;
+    }
+
+     /* Section 2 */
+
+     #section2 {
+         padding: 0rem;
+     }
+
+     .section2Card {
+         padding: 2rem 1.4rem 2rem 1.4rem;
+         margin-bottom: 1rem;
+     }
+
+     #buttonDiv {
+        right: 26%;
+        margin-bottom: 10rem;
+    }
+
+    /* Section 3 */
+
+
+    /* Footer */
+
+    #footer {
+        margin-top: 35rem;
+        width: 95%;
+        padding: 3rem 0rem;
+    }
+
+    #footer-logo {
+        margin: 0px;
     }
 
   }

@@ -429,14 +429,12 @@ button:hover {
 
   }
 
-
-
-
   @media only screen and (max-width: 767px) {
 
     body {
         padding: 20px;
     }
+    
     /* Typography */
     
     h1 {
@@ -582,9 +580,11 @@ button:hover {
         margin-top: 3rem;
     }
 
-   
-
     /* Footer */
+
+    #footer {
+        padding: 3rem 0rem;
+    }
 
     #footer-logo {
         margin: 0px;
