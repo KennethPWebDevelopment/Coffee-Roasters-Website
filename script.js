@@ -415,11 +415,11 @@ let formStatus = 0;
 createPlanBtn.addEventListener("click", function() {
    if (formStatus === 0) {
       orderSummaryOverlay.style.display = "block";
-      overlay.style.display = "block";
+      // overlay.style.display = "block";
       formStatus = 1;
    } else {
       orderSummaryOverlay.style.display = "none";
-      overlay.style.display = "none";
+      // overlay.style.display = "none";
       formStatus = 0; 
    }
    
